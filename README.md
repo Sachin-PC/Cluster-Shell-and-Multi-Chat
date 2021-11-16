@@ -1,6 +1,7 @@
 # Cluster-Shell-and-Multi-Chat
 
-Shell Design Document 
+Shell Design Document
+
 Custom bash like Shell is created, which will take the command that can have multiple arguments. Fork will create a child process for the command and then execv call is used to execve a new program for that particular command. The new program will completely overwrite the child. 
 1. User can enter a command with multiple arguments.
 2. shell supports any number of commands in the pipeline. e.g. ls|wc|wc|wc. Prints details 
